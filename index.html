@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Azure AD Login</title>
+    <!-- Using MSAL for Single Page App, skipping the need to make a backend jsut for auth -->
+    <script src="https://alcdn.msauth.net/browser/2.35.0/js/msal-browser.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to right, #bdede3, #8dafea);
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #a012e1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4b0569;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Azure Active Directory Auth</h1>
+    <button onclick="signIn()">Login with K.R. Mangalam</button>
+</body>
+
+</html>
